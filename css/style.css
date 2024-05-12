@@ -156,10 +156,6 @@ p {
   text-shadow: 2px 2px 4px rgba(16, 26, 75, 0.5);
 }
 
-.drop-shadow-heading {
-  -webkit-text-stroke: #0e0e0e 1px;
-
-}
 }
 
 
@@ -171,7 +167,8 @@ p {
     border-radius: 4px; /* Add rounded corners for a subtle style */
   }
   .hero .heroText p {
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   .hero .heroText span {
