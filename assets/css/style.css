@@ -421,8 +421,8 @@ h6 {
 .sliding-background {
   width: 200%; /* Ensures the sliding effect */
   height: 100%;
-  background: url('/assets/images/portfolio/Buses.png') repeat-x center center;
-  background-size: contain;
+  background: url('/assets/images/portfolio/carousel.webp') repeat-x center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -430,6 +430,12 @@ h6 {
   z-index: 1; /* Background should be at the lowest level */
 }
 
+@media screen and (max-width: 495px) {
+  .sliding-background {
+    background-size: cover;
+    animation: slide 10s linear infinite;
+  }
+}
 @keyframes slide {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
