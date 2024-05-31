@@ -136,8 +136,9 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #ff7b0e;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #header .logo img {
@@ -293,7 +294,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #ff7b0e;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;

@@ -125,6 +125,17 @@
     }
 });
 
+  // Change color of span in class 'logo' after 50% of the scroll position
+  window.addEventListener('scroll', function() {
+    let logo = document.querySelector('.logo span');
+    let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    let documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollPosition > (documentHeight * 0.02) && logo) {
+      logo.style.color = '#ff7b0e';
+    } else if (logo) {
+      logo.style.color = '';
+    }
+  });
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
