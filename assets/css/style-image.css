@@ -113,7 +113,7 @@ body {
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
-    background: rgba(1, 4, 136, 0.9);
+    background: #ffffff;
   }
   
   #header.header-transparent {
@@ -144,7 +144,7 @@ body {
     padding: 0;
     margin-left: 20px;
     margin-right: 10px;
-    max-height: 40px;
+    max-height: 60px;
   }
   /*--------------------------------------------------------------
   # Navigation Menu
@@ -177,7 +177,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    color: rgb(255, 255, 255);
+    
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -508,6 +508,17 @@ body {
     animation: slide 30s linear infinite;
     z-index: 1; /* Background should be at the lowest level */
   }
+  .sliding-background10 {
+    width: 200%; /* Ensures the sliding effect */
+    height: 100%;
+    background: url('/assets/images/portfolio/tractor.jpg') repeat-x center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 30s linear infinite;
+    z-index: 1; /* Background should be at the lowest level */
+  }
 
   
   
@@ -534,6 +545,7 @@ body {
     color: white;
     font-size: 2em;
     font-family: Arial, sans-serif;
+    line-height: 1.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 3; /* Ensures text is on top of the overlay */
   }

@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #ecb81e;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -109,16 +109,14 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 0px;
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(1, 4, 136, 0.9);
 }
 
-#header.header-transparent {
-  background: transparent;
-}
 
 #header.header-scrolled {
   background: rgb(255, 255, 255);
@@ -136,7 +134,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #ffffff;
+  color: #ff7b0e;
   text-decoration: none;
   font-weight: bold;
 }
@@ -251,7 +249,6 @@ h6 {
   font-size: 15px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 255, 255);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -367,7 +364,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #ffffff;
+  color: #ff7b0e;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -481,6 +478,10 @@ h6 {
   display: block;
 }
 
+.rmc {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
