@@ -226,6 +226,8 @@ body {
   .navbar li:hover>a {
     color: #ff7b0e;
   }
+
+  
   
   .navbar .dropdown ul {
     display: block;
