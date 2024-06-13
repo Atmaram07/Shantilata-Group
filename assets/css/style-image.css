@@ -133,6 +133,17 @@ body {
     line-height: 1;
     font-weight: 500;
   }
+  @media (max-width: 406px) {
+    #header .logo h1 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 320px) {
+    #header .logo h1 {
+      font-size: 12px;
+    }
+  }
+  
   
   #header .logo h1 a,
   #header .logo h1 a:hover {
@@ -520,6 +531,17 @@ body {
     z-index: 1; /* Background should be at the lowest level */
   }
 
+  .sliding-background11 {
+    width: 200%; /* Ensures the sliding effect */
+    height: 100%;
+    background: url('/assets/images/RMC.jpg') repeat-x center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 30s linear infinite;
+    z-index: 1; /* Background should be at the lowest level */
+  }
   
   
   @keyframes slide {
