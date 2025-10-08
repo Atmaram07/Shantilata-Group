@@ -703,9 +703,48 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Swiper.js -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Swiper
+  const swiper = new Swiper('.achievements-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      576: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+  });
+
+  // View All button logic
+  const viewAllBtn = document.getElementById('viewAllBtn');
+  const hiddenSlides = document.querySelectorAll('.hidden-slide');
+
+  viewAllBtn.addEventListener('click', function() {
+    hiddenSlides.forEach(slide => slide.style.display = 'block');
+    swiper.update(); // refresh swiper to include new slides
+    viewAllBtn.style.display = 'none'; // hide button after expanding
+  });
+});
+</script>
+
 
 </body>
 
 </html>
+
 
 
