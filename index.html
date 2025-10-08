@@ -429,13 +429,13 @@
 
 .slide-track {
   display: flex;
-  width: calc(560px * 27); /* Adjusted for 18 + duplicates */
-  animation: scroll 80s linear infinite;
+  align-items: center;
+  animation: scroll 70s linear infinite;
+  width: max-content; /* key for flexible width */
 }
 
 .slide {
-  height: 400px;
-  width: 280px;
+flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +444,7 @@
   border-radius: 16px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
 }
 
 .slide:hover {
@@ -452,26 +453,27 @@
 }
 
 .slide img {
-  width: 90%;
-  height: 90%;
-  border-radius: 12px;
+  height: 4000px; /* consistent height */
+  width: auto; /* dynamic width */
   object-fit: contain;
+  border-radius: 12px;
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-280px * 9)); }
+    0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* loops halfway for duplicates */
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .slide img {
+    height: 120px;
+  }
   .slide {
-    width: 180px;
-    height: 140px;
+    margin-right: 15px;
   }
   .slide-track {
-    width: calc(180px * 27);
-    animation: scroll 45s linear infinite;
+    animation: scroll 60s linear infinite;
   }
 }
 </style>
@@ -787,6 +789,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
+
 
 
 
