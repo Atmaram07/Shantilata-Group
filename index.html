@@ -363,77 +363,119 @@
       </div>
     </section><!-- End Clients Section -->
 
-<section id="achievements" class="achievements-section py-5">
+<!-- Achievements Section -->
+<section class="achievements">
   <div class="container">
-    <div class="section-header text-center mb-4">
-      <h2 class="section-title">Achievements & Recognitions</h2>
-      <p class="section-subtitle">Honors and awards that mark our journey of excellence</p>
-    </div>
+    <h2 class="section-title">Our Achievements</h2>
+    <div class="slider">
+      <div class="slide-track">
+        <!-- 18 unique images -->
+        <div class="slide"><img src="images/award1.jpg" alt="Award 1"></div>
+        <div class="slide"><img src="images/award2.jpg" alt="Award 2"></div>
+        <div class="slide"><img src="images/award3.jpg" alt="Award 3"></div>
+        <div class="slide"><img src="images/award4.jpg" alt="Award 4"></div>
+        <div class="slide"><img src="images/award5.jpg" alt="Award 5"></div>
+        <div class="slide"><img src="images/award6.jpg" alt="Award 6"></div>
+        <div class="slide"><img src="images/award7.jpg" alt="Award 7"></div>
+        <div class="slide"><img src="images/award8.jpg" alt="Award 8"></div>
+        <div class="slide"><img src="images/award9.jpg" alt="Award 9"></div>
+        <div class="slide"><img src="images/award10.jpg" alt="Award 10"></div>
+        <div class="slide"><img src="images/award11.jpg" alt="Award 11"></div>
+        <div class="slide"><img src="images/award12.jpg" alt="Award 12"></div>
+        <div class="slide"><img src="images/award13.jpg" alt="Award 13"></div>
+        <div class="slide"><img src="images/award14.jpg" alt="Award 14"></div>
+        <div class="slide"><img src="images/award15.jpg" alt="Award 15"></div>
+        <div class="slide"><img src="images/award16.jpg" alt="Award 16"></div>
+        <div class="slide"><img src="images/award17.jpg" alt="Award 17"></div>
+        <div class="slide"><img src="images/award18.jpg" alt="Award 18"></div>
 
-    <div class="swiper achievements-swiper">
-      <div class="swiper-wrapper">
-        <!-- Initial visible slides -->
-        <div class="swiper-slide achievement-card">
-          <img src="assets/awards/award1.jpg" alt="Best Business Excellence 2023">
-          <div class="achievement-overlay">
-            <h5>Best Business Excellence</h5>
-            <span>2023</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide achievement-card">
-          <img src="assets/awards/award2.jpg" alt="Outstanding Growth 2022">
-          <div class="achievement-overlay">
-            <h5>Outstanding Growth</h5>
-            <span>2022</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide achievement-card">
-          <img src="assets/awards/award3.jpg" alt="Leadership Award 2021">
-          <div class="achievement-overlay">
-            <h5>Leadership Award</h5>
-            <span>2021</span>
-          </div>
-        </div>
-
-        <!-- Hidden slides (expand when View All is clicked) -->
-        <div class="swiper-slide achievement-card hidden-slide">
-          <img src="assets/awards/award4.jpg" alt="Innovation Excellence 2020">
-          <div class="achievement-overlay">
-            <h5>Innovation Excellence</h5>
-            <span>2020</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide achievement-card hidden-slide">
-          <img src="assets/awards/award5.jpg" alt="Community Impact 2019">
-          <div class="achievement-overlay">
-            <h5>Community Impact</h5>
-            <span>2019</span>
-          </div>
-        </div>
-
-        <div class="swiper-slide achievement-card hidden-slide">
-          <img src="assets/awards/award6.jpg" alt="Environmental Leadership 2018">
-          <div class="achievement-overlay">
-            <h5>Environmental Leadership</h5>
-            <span>2018</span>
-          </div>
-        </div>
+        <!-- duplicate for infinite loop -->
+        <div class="slide"><img src="images/award1.jpg" alt="Award 1"></div>
+        <div class="slide"><img src="images/award2.jpg" alt="Award 2"></div>
+        <div class="slide"><img src="images/award3.jpg" alt="Award 3"></div>
+        <div class="slide"><img src="images/award4.jpg" alt="Award 4"></div>
+        <div class="slide"><img src="images/award5.jpg" alt="Award 5"></div>
+        <div class="slide"><img src="images/award6.jpg" alt="Award 6"></div>
+        <div class="slide"><img src="images/award7.jpg" alt="Award 7"></div>
+        <div class="slide"><img src="images/award8.jpg" alt="Award 8"></div>
+        <div class="slide"><img src="images/award9.jpg" alt="Award 9"></div>
       </div>
-
-      <!-- Navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-    <!-- Expand button -->
-    <div class="text-center mt-4">
-      <button id="viewAllBtn" class="btn btn-primary">View All Achievements</button>
     </div>
   </div>
 </section>
+
+<style>
+/* === Achievements Section === */
+.achievements {
+  padding: 80px 0;
+  background: #fafafa;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* === Slider === */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(280px * 27); /* Adjusted for 18 + duplicates */
+  animation: scroll 50s linear infinite;
+}
+
+.slide {
+  height: 200px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-280px * 9)); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide {
+    width: 180px;
+    height: 140px;
+  }
+  .slide-track {
+    width: calc(180px * 27);
+    animation: scroll 45s linear infinite;
+  }
+}
+</style>
+
 
 
    
@@ -745,6 +787,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </body>
 
 </html>
+
 
 
 
